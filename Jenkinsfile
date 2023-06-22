@@ -1,4 +1,5 @@
 #!/usr/bin/env groovy
+@Library('jenkins-shared-library')
 
 def gv
 
@@ -17,7 +18,9 @@ pipeline{
         stage("build and push"){
             steps{
                 script{
-                    gv.buildApp()
+                    ////django-erecruiter:1.1.0
+                    buildImage 'django-erecruiter:1.1.0'
+                    pushImage 'django-erecruiter:1.1.0'
                 }
             }
         }
@@ -30,5 +33,4 @@ pipeline{
             }   
         }
     }
-
 }
