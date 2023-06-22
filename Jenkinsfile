@@ -1,13 +1,14 @@
 #!/usr/bin/env groovy
 
-
+def gv
 pipeline{
     agent any
     stages{
         stage("init"){
             steps{
                 script{
-                    echo "initializing..."
+                    echo "initializing...webhoot built automation"
+                    gv = load 'script.groovy'
                 }
             }
         }
