@@ -32,7 +32,7 @@ pipeline{
 
     post{
         always{
-            echo "always displaying..."
+            echo "always displaying.dd.."
         }
         success{
             echo "success displaying..."
