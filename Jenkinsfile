@@ -16,7 +16,7 @@ pipeline{
         stage("build"){
             steps{
                 script{
-                    echo "building..."
+                    echo "building...dd"
                 }
             }
         }
