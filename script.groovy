@@ -1,5 +1,6 @@
 def buildApp(){
     echo "building and pushing..."
+    docker build --tag django-eRecruiter:1.1.0 .
     push()
 }
 return this
