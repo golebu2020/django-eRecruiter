@@ -19,8 +19,9 @@ pipeline{
             steps{
                 script{
                     ////django-erecruiter:1.1.0
-                    buildImage 'django-erecruiter:1.1.0'
-                    pushImage 'django-erecruiter:1.1.0'
+                    // buildImage 'django-erecruiter:1.1.0'
+                    // pushImage 'django-erecruiter:1.1.0'
+                    gv.buildApp()
                 }
             }
         }
