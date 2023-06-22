@@ -1,7 +1,7 @@
 def buildApp(){
     echo "building and pushing..."
-    sh "docker build --tag django-erecruiter:1.1.0 ."
-    sh "docker tag django-erecruiter:1.1.0 46.101.168.73:8082/django-erecruiter:1.1.0"
+    echo "building and pushing..."
+    sh "docker build --tag golebu2020/maven-repo:django-erecruiter-1.1.0 ."
     push()
 }
 return this
@@ -9,8 +9,8 @@ return this
 def push(){
     echo "Pushing..."
     withCredentials([usernamePassword(credentialsId: 'nexus-credentials', usernameVariable: 'USR', passwordVariable: 'PASS')]){
-        sh "echo ${PASS} | docker login -u ${USR} --password-stdin 46.101.168.73:8082"
-        sh "docker push 46.101.168.73:8082/django-erecruiter:1.1.0"
+        sh "echo ${script.PASS} | docker login -u ${script.USR} --password-stdin"
+        sh "docker push golebu2020/maven-repo:django-erecruiter-1.1.0"
     }
 }
 return this
