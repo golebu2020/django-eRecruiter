@@ -24,7 +24,7 @@ pipeline{
         stage("deploy"){
             steps{
                 script{
-                    echo "deploying..."
+                    echo "deploying..dd"
                 }
             }   
         }
