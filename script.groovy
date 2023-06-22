@@ -10,7 +10,7 @@ def push(){
     echo "Pushing..."
     withCredentials([usernamePassword(credentialsId: 'nexus-credentials', usernameVariable: 'USR', passwordVariable: 'PASS')]){
         sh "docker login -u ${USR} -p ${PASS} 46.101.168.73:8082"
-        // sh "docker push 46.101.168.73:8082/django-erecruiter:1.1.0"
+        sh "docker push 46.101.168.73:8082/django-erecruiter:1.1.0"
     }
 }
 return this
