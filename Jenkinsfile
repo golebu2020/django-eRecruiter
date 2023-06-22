@@ -16,7 +16,7 @@ pipeline{
         stage("build"){
             steps{
                 script{
-                    echo "building..."
+                    gv.buildApp()
                 }
             }
         }
@@ -24,21 +24,10 @@ pipeline{
         stage("deploy"){
             steps{
                 script{
-                    echo "deploying..."
+                    gv.deployApp()
                 }
             }   
         }
     }
 
-    post{
-        always{
-            echo "always displaying..."
-        }
-        success{
-            echo "success displaying..."
-        }
-        failure{
-            echo "failure displaying..."
-        }
-    }
 }
