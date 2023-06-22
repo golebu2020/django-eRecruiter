@@ -1,5 +1,5 @@
 def buidApp(){
-     echo "building..."
+    echo "building..."
 }
 
 
