@@ -1,4 +1,4 @@
-def buildApp(){
+def buildPushApp(){
     echo "building and pushing..."
 }
 return this
