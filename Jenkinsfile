@@ -14,7 +14,7 @@ pipeline{
             }
         }
 
-        stage("build"){
+        stage("build and push"){
             steps{
                 script{
                     gv.buildApp()

@@ -1,5 +1,5 @@
 def buildApp(){
-    echo "building..."
+    echo "building and pushing..."
 }
 return this
 
