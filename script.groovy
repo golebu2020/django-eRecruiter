@@ -7,9 +7,10 @@ def buildApp(){
 return this
 
 def push(){
-    sh "docker login -u chinedu -p Nedu123@# 46.101.168.73:8082"
-    sh "docker push 46.101.168.73:8082/django-erecruiter:1.1.0"
     echo "Pushing..."
+    sh "docker login -u chinedu -p Nedu123@# 46.101.168.73:8082"
+    // sh "docker push 46.101.168.73:8082/django-erecruiter:1.1.0"
+
 
 }
 return this
