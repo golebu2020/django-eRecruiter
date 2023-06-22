@@ -4,7 +4,7 @@ def buildApp(){
 }
 return this
 
-def Push(){
+def push(){
     echo "Pushing..."
 
 }
