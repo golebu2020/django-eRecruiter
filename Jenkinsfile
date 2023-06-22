@@ -16,7 +16,7 @@ pipeline{
         stage("build"){
             steps{
                 script{
-                    echo "building...dd"
+                    echo "building..."
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline{
         stage("deploy"){
             steps{
                 script{
-                    echo "deploying..dddddffd"
+                    echo "deploying..."
                 }
             }   
         }
@@ -32,7 +32,7 @@ pipeline{
 
     post{
         always{
-            echo "always displaying.dd.."
+            echo "always displaying..."
         }
         success{
             echo "success displaying..."
