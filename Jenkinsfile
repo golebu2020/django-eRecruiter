@@ -9,7 +9,7 @@ pipeline{
             steps{
                 script{
                     echo "initializing...webhoot built automation"
-                    gv = load "script.groov"
+                    gv = load "script.groovy"
                 }
             }
         }
