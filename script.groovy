@@ -11,7 +11,7 @@ def push(){
 return this
 
 def deployApp(){
-    echo "deploying..."
+    echo "deploying...."
 }
 
 return this
